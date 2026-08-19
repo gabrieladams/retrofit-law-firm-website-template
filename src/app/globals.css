@@ -41,3 +41,19 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+.heading-size-sm {
+  font-size: var(--heading-font-size-sm);
+}
+
+.heading-size-md {
+  font-size: var(--heading-font-size-md);
+}
+
+.heading-size-lg {
+  font-size: var(--heading-font-size-lg);
+}
+
+.heading-size-xl {
+  font-size: var(--heading-font-size-xl);
+}

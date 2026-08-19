@@ -8,10 +8,10 @@ type HeadingProps = {
 type HeadingTag = "h1" | "h2" | "h3" | "h4";
 
 const sizeStyles: Record<HeadingProps["size"], string> = {
-  sm: "text-[var(--heading-font-size-sm)]",
-  md: "text-[var(--heading-font-size-md)]",
-  lg: "text-[var(--heading-font-size-lg)]",
-  xl: "text-[var(--heading-font-size-xl)]",
+  sm: "heading-size-sm",
+  md: "heading-size-md",
+  lg: "heading-size-lg",
+  xl: "heading-size-xl",
 };
 
 export function Heading({ size, children, id, className = "" }: HeadingProps) {
