@@ -1,18 +1,23 @@
 type HeadingProps = {
-  as?: "h2" | "h3";
-  size: "lg" | "md";
+  as?: "h1" | "h2" | "h3" | "h4";
+  size: "sm" | "md" | "lg" | "xl";
   children: React.ReactNode;
   id?: string;
   className?: string;
+};
+
+const sizeStyles: Record<HeadingProps["size"], string> = {
+  sm: "text-[var(--heading-font-size-sm)]",
+  md: "text-[var(--heading-font-size-md)]",
+  lg: "text-[var(--heading-font-size-lg)]",
+  xl: "text-[var(--heading-font-size-xl)]",
 };
 
 export function Heading({ as: Tag = "h2", size, children, id, className = "" }: HeadingProps) {
   return (
     <Tag
       id={id}
-      className={`font-medium leading-[1.2] tracking-[-0.02em] text-[var(--text-color-black-90)] ${
-        size === "lg" ? "text-[clamp(2rem,3.2vw,2.25rem)]" : "text-2xl"
-      } ${className}`}
+      className={`font-medium capitalize leading-[1.2] text-[var(--text-color-black-90)] ${sizeStyles[size]} ${className}`}
     >
       {children}
     </Tag>
