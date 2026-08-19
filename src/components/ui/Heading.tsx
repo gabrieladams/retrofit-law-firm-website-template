@@ -1,10 +1,11 @@
 type HeadingProps = {
-  as?: "h1" | "h2" | "h3" | "h4";
   size: "sm" | "md" | "lg" | "xl";
   children: React.ReactNode;
   id?: string;
   className?: string;
 };
+
+type HeadingTag = "h1" | "h2" | "h3" | "h4";
 
 const sizeStyles: Record<HeadingProps["size"], string> = {
   sm: "text-[var(--heading-font-size-sm)]",
@@ -13,7 +14,9 @@ const sizeStyles: Record<HeadingProps["size"], string> = {
   xl: "text-[var(--heading-font-size-xl)]",
 };
 
-export function Heading({ as: Tag = "h2", size, children, id, className = "" }: HeadingProps) {
+export function Heading({ size, children, id, className = "" }: HeadingProps) {
+  const Tag = ({ xl: "h1", lg: "h2", md: "h3", sm: "h4" } satisfies Record<HeadingProps["size"], HeadingTag>)[size];
+
   return (
     <Tag
       id={id}

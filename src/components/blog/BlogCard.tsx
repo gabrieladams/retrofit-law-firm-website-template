@@ -14,7 +14,7 @@ export function BlogCard({ post }: BlogCardProps) {
     <Card>
       <div className="flex h-full flex-col items-start p-6">
         <Overline>{post.category}</Overline>
-        <Heading as="h3" size="md" className="pb-4">
+        <Heading size="md" className="pb-4">
           {post.title}
         </Heading>
         <BodyText>{post.excerpt}</BodyText>
