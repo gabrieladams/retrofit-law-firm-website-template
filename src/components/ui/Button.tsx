@@ -17,7 +17,7 @@ type ButtonProps = {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "rounded-full border border-[var(--brand-color-100)] bg-[var(--brand-color-100)] px-6 py-3.5 text-[var(--text-color-white-90)] hover:border-[var(--brand-color-100-hover)] hover:bg-[var(--brand-color-100-hover)]",
+    "rounded-full border border-[var(--brand-color-100)] bg-[var(--brand-color-100)] px-6 py-3.5 text-[var(--text-color-white-90)] hover:border-red hover:bg-[var(--brand-color-100-hover)]",
   "secondary-dark":
     "rounded-full border border-[var(--text-color-black-90)] px-6 py-3.5 text-[var(--text-color-black-90)] hover:bg-[var(--text-color-black-90)] hover:text-[var(--text-color-white-90)]",
   "secondary-light":
