@@ -9,6 +9,15 @@
   --black-30: rgba(0, 0, 0, 0.3);
   --black-60: rgba(0, 0, 0, 0.6);
   --black-90: rgba(0, 0, 0, 0.9);
+  --black-100: rgba(0, 0, 0, 1);
+
+  --white-15: rgba(255, 255, 255, 0.15);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-100: rgba(255, 255, 255, 1);
+
+
   --text-color-black-90: rgba(0, 0, 0, 0.9);
   --text-color-white-90: rgba(255, 255, 255, 0.9);
   --text-color-gray-60: #6d6d6d;
