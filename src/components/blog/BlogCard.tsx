@@ -25,7 +25,7 @@ export function BlogCard({ post }: BlogCardProps) {
         </div>
         <Button
           href={post.href}
-          variant='primary'
+          variant='secondary-dark'
           className="mt-auto"
           aria-label={`Learn more about ${post.title}`}
         >
