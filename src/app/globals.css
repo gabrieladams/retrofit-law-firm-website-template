@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  /* --background: #ffffff; */
+  --background: #000000;
   --foreground: rgba(0, 0, 0, 0.9);
   --brand-color-100: rgba(124, 148, 122, 1);
   --brand-color-text: #557255;
